@@ -24,6 +24,9 @@ public class Purchase {
         this.createdAt = createdAt;
     }
 
+    public String getId() {
+        return id;
+    }
 
     public String getName() {
         return name;

@@ -2,6 +2,7 @@ package com.reactive.example.reactivespring.service;
 
 import com.reactive.example.reactivespring.model.CoinBaseResponse;
 import com.reactive.example.reactivespring.model.Purchase;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
@@ -11,5 +12,10 @@ import reactor.core.publisher.Mono;
 public interface CoinbaseService {
 
     Mono<CoinBaseResponse> getCryptoPrice(String priceName);
+
     Mono<Purchase>createPurchase(String priceName);
+
+    Mono<Purchase>getPurchaseById(String id);
+
+    Flux<Purchase> listAllPurchases();
 }
