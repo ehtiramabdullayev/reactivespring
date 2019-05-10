@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
-import java.time.LocalDateTime;
-
 /**
  * @author Ehtiram_Abdullayev on 09.05.2019
  * @project reactivespring
@@ -19,7 +17,6 @@ import java.time.LocalDateTime;
 @RestController
 @RequestMapping("/coin/purchase/v1")
 public class PurchaseController {
-
 
     @Autowired
     private CoinbaseService coinbaseService;
